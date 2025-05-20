@@ -1,14 +1,20 @@
 # fastrtc-whisper-localllm
 
 
-1. Generate cert
+## Generate cert
 ```
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
 ```
 Place the cert to "./cert"
 
 
-2. Run!
+## Config the `.env`
+```
+cp .env.example .env
+```
+
+
+## Run!
 ```
 python main.py
 ```
